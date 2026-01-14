@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias | Aragón Montessori</title>
+  <meta name="description" content="Gracias por tu solicitud. Te responderemos en 24–48 horas.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">Aragón Montessori</a>
+    <div class="nav-links">
+      <a href="index.html#ambientes">Ambientes</a>
+      <a href="index.html#testimonios">Familias</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header class="hero" style="min-height:60vh; display:flex; align-items:center; justify-content:center;">
+    <div style="max-width:800px; padding:0 8%; text-align:center;">
+      <h1>¡Gracias! Hemos recibido tu mensaje</h1>
+      <p>
+        Te responderemos en un plazo aproximado de <strong>24–48 horas</strong>.
+        Si te viene bien, puedes agendar una visita y conocer la escuela en persona.
+      </p>
+
+      <div style="margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a href="index.html" class="btn-principal">Volver a la web</a>
+        <a href="index.html#contacto" class="btn-principal" style="background: var(--verde-salvia); box-shadow:none;">
+          Ver contacto
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Aragón Montessori</h3>
+        <p>Educación consciente para el futuro de Zaragoza.</p>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <p>Política de Privacidad<br>Aviso Legal<br>Calendario Escolar</p>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <p>Instagram<br>Facebook</p>
+      </div>
+    </div>
+    <p style="border-top: 1px solid #555; padding-top: 20px;">
+      © <span id="year"></span> Aragón Montessori.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
