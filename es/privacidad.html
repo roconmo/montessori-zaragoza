@@ -7,19 +7,19 @@
   <meta name="description" content="Política de privacidad de Aragón Montessori. Información sobre el tratamiento de datos personales.">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html" class="logo">Aragón Montessori</a>
-    <div class="nav-links">
-      <a href="index.html#ambientes">Ambientes</a>
-      <a href="index.html#metodo">Método</a>
-      <a href="index.html#contacto" class="btn-principal">Contacto</a>
-    </div>
-  </nav>
+  <div id="nav-placeholder"></div>
+    <script>
+        fetch('../components/nav_legal_es.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
 
   <header class="hero" style="min-height:40vh; display:flex; align-items:center;">
     <div class="hero-content">
@@ -97,34 +97,13 @@
     </p>
   </section>
 
-  <footer>
-    <div class="footer-grid">
-      <div>
-        <h3>Aragón Montessori</h3>
-        <p>Educación consciente para el futuro de Zaragoza.</p>
-      </div>
-      <div>
-        <h3>Enlaces</h3>
-        <p>
-          <a href="privacidad.html">Política de Privacidad</a><br>
-          Aviso Legal<br>
-          Calendario Escolar
-        </p>
-      </div>
-      <div>
-        <h3>Síguenos</h3>
-        <p>Instagram<br>Facebook</p>
-      </div>
-    </div>
-
-    <p style="border-top: 1px solid #555; padding-top: 20px;">
-      © <span id="year"></span> Aragón Montessori
-    </p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <div id="footer-placeholder"></div>
+    <script>
+        fetch('../components/footer_es.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+    </script>
 </body>
 </html>

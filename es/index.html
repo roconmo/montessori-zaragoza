@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aragón Montessori | Escuela Activa en Zaragoza</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
 </head>
 <body>
-    <nav>
-  <a href="#" class="logo">Aragón Montessori</a>
-  <div class="nav-links">
-    <a href="#ambientes">Ambientes</a>
-    <a href="#metodo">Método</a>
-    <a href="#bosque">Bosque Escuela</a>
-    <a href="#equipo">Equipo</a>
-    <a href="#contacto" class="btn-principal">Contacto</a>
-  </div>
-</nav>
-
-
+    <!-- Menú navegación-->
+   <div id="nav-placeholder"></div>
+    <script>
+        fetch('../components/nav_es.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
     <header class="hero">
         <h1>Un entorno diseñado para florecer</h1>
         <p>En el centro de Zaragoza, ofrecemos una educación basada en el respeto al ritmo individual y el amor por el aprendizaje.</p>
@@ -40,7 +37,7 @@
     <div class="tarjeta-ambiente">
       <div class="carousel"
          data-carousel
-         data-base="img/ninos13/img"
+         data-base="../img/ninos13/img"
          data-from="131"
          data-to="135"
          data-ext=".png"
@@ -63,12 +60,12 @@
     <!-- 2) Casa de Niños y Niñas 3-6 -->
     <div class="tarjeta-ambiente">
       <div class="carousel"
-         data-carousel
-         data-base="img/ninos36/img"
-         data-from="361"
-         data-to="368"
-         data-ext=".png"
-         data-alt="Casa de Niños y Niñas 3–6 años – ambiente preparado">
+            data-carousel
+            data-base="../img/ninos36/img"
+            data-from="361"
+            data-to="368"
+            data-ext=".png"
+            data-alt="Casa de Niños y Niñas 3–6 años – ambiente preparado">
       <button class="carousel-btn prev" type="button" aria-label="Foto anterior">‹</button>
       <div class="carousel-track" data-track></div>
       <button class="carousel-btn next" type="button" aria-label="Foto siguiente">›</button>
@@ -131,12 +128,12 @@
     <!-- Carrusel -->
     <div class="bosque-media">
         <div class="carousel"
-         data-carousel
-         data-base="img/bosque/imgbe"
-         data-from="1"
-         data-to="5"
-         data-ext=".png"
-         data-alt="Bosque escuela – exploración en la naturaleza">
+            data-carousel
+            data-base="../img/bosque/imgbe"
+            data-from="1"
+            data-to="5"
+            data-ext=".png"
+            data-alt="Bosque escuela – exploración en la naturaleza">
       <button class="carousel-btn prev" type="button" aria-label="Foto anterior">‹</button>
       <div class="carousel-track" data-track></div>
       <button class="carousel-btn next" type="button" aria-label="Foto siguiente">›</button>
@@ -190,7 +187,7 @@
 
     <div class="equipo-card">
       <div class="equipo-foto">
-        <img src="img/equipo/imgeqoonagh.png" alt="Nombre Apellido">
+        <img src="../img/equipo/imgeqoonagh.png" alt="Nombre Apellido">
       </div>
       <h3>Oonagh</h3>
       <p class="equipo-rol">Guía en Casa de Niños y Niñasl</p>
@@ -204,7 +201,7 @@
 
     <div class="equipo-card">
       <div class="equipo-foto">
-        <img src="img/equipo/imgeqpiluka.png" alt="Piluka">
+        <img src="../img/equipo/imgeqpiluka.png" alt="Piluka">
       </div>
       <h3>Piluka</h3>
       <p class="equipo-rol">Guía en Casa de Niños y Niñas</p>
@@ -219,7 +216,7 @@ Madre de un niño y una niña.
 
     <div class="equipo-card">
       <div class="equipo-foto">
-        <img src="img/equipo/imgeqlucia.png" alt="Piluka">
+        <img src="../img/equipo/imgeqlucia.png" alt="Piluka">
       </div>
       <h3>Lucía</h3>
       <p class="equipo-rol">Guía en Comunidad Infantil</p>
@@ -232,7 +229,7 @@ Madre de un niño y una niña.
 
     <div class="equipo-card">
       <div class="equipo-foto">
-        <img src="img/equipo/imgeqdeborah.png" alt="Piluka">
+        <img src="../img/equipo/imgeqdeborah.png" alt="Piluka">
       </div>
       <h3>Deborah</h3>
       <p class="equipo-rol">Guía en Comunidad Infantil</p>
@@ -279,73 +276,63 @@ Madre de un niño y una niña.
                 </div>
             </div>
             <div class="contacto-form">
-                <form action="https://formspree.io/f/xreegeae" method="POST">
+    <form action="https://formsubmit.co/info@aragonmontessori.es" method="POST">
 
-                    <div class="form-group">
-                        <label>Nombre del padre/madre</label>
-                        <input type="text" name="nombre" placeholder="Ej. María García" required />
-                    </div>
+        <div class="form-group">
+            <label>Nombre del padre/madre</label>
+            <input type="text" name="nombre" placeholder="Ej. María García" required />
+        </div>
 
-                    <div class="form-group">
-                        <label>Edad del niño/a</label>
-                        <select name="etapa" required>
-                            <option value="" selected disabled>Selecciona una etapa</option>
-                            <option>Nido (4-18 meses)</option>
-                            <option>Comunidad Infantil (18-36 meses)</option>
-                            <option>Casa de Niños (3-6 años)</option>
-                        </select>
-                    </div>
+        <div class="form-group">
+            <label>Edad del niño/a</label>
+            <select name="etapa" required>
+                <option value="" selected disabled>Selecciona una etapa</option>
+                <option>Nido (4-18 meses)</option>
+                <option>Comunidad Infantil (18-36 meses)</option>
+                <option>Casa de Niños (3-6 años)</option>
+            </select>
+        </div>
 
-                    <div class="form-group">
-                        <label>Email de contacto</label>
-                        <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
-                    </div>
+        <div class="form-group">
+            <label>Email de contacto</label>
+            <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
+        </div>
 
-                    <div class="form-group">
-                        <label>¿En qué podemos ayudarte?</label>
-                        <textarea name="mensaje" rows="4" placeholder="Dinos tus dudas o solicita una visita..."></textarea>
-                    </div>
+        <div class="form-group">
+            <label>¿En qué podemos ayudarte?</label>
+            <textarea name="mensaje" rows="4" placeholder="Dinos tus dudas o solicita una visita..."></textarea>
+        </div>
 
-                    <!-- Campos ocultos (Formspree) -->
-                    <input type="hidden" name="_subject" value="Nueva solicitud · Escuela Montessori" />
-                    <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_redirect" value="/gracias.html" />
-
-                    <button type="submit" class="btn-submit">Enviar solicitud de información</button>
-
-                    <p class="hint">
-                        Al enviar este formulario aceptas la
-                        <a href="privacidad.html">política de privacidad</a>.
-                    </p>
-
-                </form>
-            </div>
+        <!-- ====== CAMPOS OCULTOS ====== -->
+        <input type="hidden" name="_subject" value="Nueva solicitud · Aragón Montessori">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="gracias.html">
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- Autorespuesta automática -->
+        <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Te responderemos pronto.">
+        <!-- ================================ -->
+        <button type="submit" class="btn-submit">Enviar solicitud de información</button>
+        <p class="hint">
+            Al enviar este formulario aceptas la
+            <a href="privacidad.html">política de privacidad</a>.
+        </p>
+    </form>
+</div>
         </div>
     </section>
-
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h3>Aragón Montessori</h3>
-                <p>Educación consciente para el futuro de Zaragoza.</p>
-            </div>
-            <div>
-                <h3>Enlaces</h3>
-                <p>Política de Privacidad<br />Aviso Legal<br />Calendario Escolar</p>
-            </div>
-            <div>
-                <h3>Síguenos</h3>
-                <p>Instagram<br />Facebook</p>
-            </div>
-        </div>
-        <p style="border-top: 1px solid #555; padding-top: 20px;">
-            © <span id="year"></span> Aragón Montessori.
-        </p>
-    </footer>
-
+    <div id="footer-placeholder"></div>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        fetch('../components/footer_es.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
     </script>
-    <script src="carrusel.js"></script>
+
+
+
+    <script src="../carrusel.js"></script>
 </body>
 </html>

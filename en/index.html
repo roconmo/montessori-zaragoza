@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aragón Montessori | Active School in Zaragoza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+
+</head>
+<body>
+    <!-- Menú navegación -->
+
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('../components/nav_en.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
+    <header class="hero">
+        <h1>An environment designed to flourish</h1>
+        <p>In the center of Zaragoza, we offer an education based on respect for individual rhythm and love for learning.</p>
+        <a href="#contacto" class="btn-principal">Schedule a personalized visit</a>
+    </header>
+
+    <!-- ====== ENVIRONMENTS (2 spaces, both with carousel) ====== -->
+<section id="ambientes" class="container">
+  <div class="text-center">
+    <h2>Our spaces</h2>
+    <p>Open spaces, natural materials and furniture sized for children.</p>
+  </div>
+
+  <div class="ambientes-grid">
+
+    <!-- 1) Infant Community 1-3 -->
+    <div class="tarjeta-ambiente">
+      <div class="carousel"
+         data-carousel
+         data-base="../img/ninos13/img"
+         data-from="131"
+         data-to="135"
+         data-ext=".png"
+         data-alt="Infant Community (1-3) – prepared environment">
+      <button class="carousel-btn prev" type="button" aria-label="Previous photo">‹</button>
+      <div class="carousel-track" data-track></div>
+      <button class="carousel-btn next" type="button" aria-label="Next photo">›</button>
+      <div class="carousel-dots" data-dots></div>
+    </div>
+      <div class="tarjeta-info">
+        <h3>Infant Community 1–3 years</h3>
+        <p>
+            The space for children aged one to two and a half years is a small community, offering a gentle introduction
+            to social life beyond the family. Children have freedom of movement and collaborate
+            in daily activities, developing their skills and independence.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2) Children's House 3-6 -->
+    <div class="tarjeta-ambiente">
+      <div class="carousel"
+            data-carousel
+            data-base="../img/ninos36/img"
+            data-from="361"
+            data-to="368"
+            data-ext=".png"
+            data-alt="Children's House 3–6 years – prepared environment">
+      <button class="carousel-btn prev" type="button" aria-label="Previous photo">‹</button>
+      <div class="carousel-track" data-track></div>
+      <button class="carousel-btn next" type="button" aria-label="Next photo">›</button>
+      <div class="carousel-dots" data-dots></div>
+    </div>
+    <div class="tarjeta-info">
+        <h3>Children's House 3–6 years</h3>
+        <p>
+            The children's house is for children from two and a half to six years old. At these ages they have an innate impulse
+            to discover the world and make it their own. Throughout this 3-4 year cycle in this environment, they
+            become experts at guiding their own learning and love discovering more about their world. In the
+            Montessori environment they can explore the prepared space and choose the activities they want to do.
+            The guides accompany them on their journey and follow their interests.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+    <section id="metodo" class="container metodo-section">
+  <div class="text-center">
+    <h2>Our method</h2>
+    <p>Respect, autonomy and lived learning.</p>
+  </div>
+
+  <div class="metodo-grid">
+    <div class="metodo-card" id="montessori">
+      <h3>Montessori</h3>
+        <blockquote class="cita">
+        "Education is a natural process that develops spontaneously
+        in the human individual."
+        <span>— Maria Montessori</span>
+      </blockquote>
+      <p>
+        We accompany each child respecting their rhythm and interests,
+        fostering autonomy, concentration and confidence.
+      </p>
+    </div>
+
+    <div class="metodo-card" id="ingles">
+      <h3>English Learning</h3>
+      <p>
+        English is integrated into the daily routine naturally, without pressure,
+        adapted to each stage.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="bosque" class="container bosque-section">
+
+  <div class="bosque-grid">
+
+    <!-- Carousel -->
+    <div class="bosque-media">
+        <div class="carousel"
+            data-carousel
+            data-base="../img/bosque/imgbe"
+            data-from="1"
+            data-to="5"
+            data-ext=".png"
+            data-alt="Forest school – exploration in nature">
+      <button class="carousel-btn prev" type="button" aria-label="Previous photo">‹</button>
+      <div class="carousel-track" data-track></div>
+      <button class="carousel-btn next" type="button" aria-label="Next photo">›</button>
+      <div class="carousel-dots" data-dots></div>
+    </div>
+
+    </div>
+
+    <!-- Text -->
+    <div class="bosque-text">
+      <h2>Forest School</h2>
+
+      <p class="lead">
+        Nature is an extension of the classroom. We go outside to explore,
+        move, observe and learn from experience.
+      </p>
+
+      <p>
+        In the forest, real skills develop: coordination, balance,
+        self-regulation, curiosity, cooperation and confidence. Learning happens
+        spontaneously when the environment invites investigation.
+      </p>
+
+      <p>
+        We accompany these experiences with proposals appropriate to each age and with a
+        respectful pace: listening, looking, touching, asking and discovering.
+      </p>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <section id="equipo" class="container equipo-section">
+
+  <div class="text-center">
+    <h2>Our team</h2>
+    <p>
+      <i>"The teacher is not one who fills the child with knowledge, but rather a guide, a being who must
+        accompany, encourage, respect and follow them; always helping in their self-development" M. Montessori</i>
+    </p>
+    <p>
+      Our team consists of Montessori guides, one of them a native English speaker from Ireland.
+    </p>
+  </div>
+
+  <div class="equipo-grid">
+
+    <div class="equipo-card">
+      <div class="equipo-foto">
+        <img src="../img/equipo/imgeqoonagh.png" alt="Oonagh">
+      </div>
+      <h3>Oonagh</h3>
+      <p class="equipo-rol">Children's House Guide</p>
+      <p class="equipo-texto">
+        AMI Montessori Guide (trained at MMI London).<br>
+        Bachelor of Science Degree in Athletic Training from <br>
+        Mercyhurst University, Erie, PA, USA.<br><br>
+        From Ireland. Mother of two girls.
+      </p>
+    </div>
+
+    <div class="equipo-card">
+      <div class="equipo-foto">
+        <img src="../img/equipo/imgeqpiluka.png" alt="Piluka">
+      </div>
+      <h3>Piluka</h3>
+      <p class="equipo-rol">Children's House Guide</p>
+      <p class="equipo-texto">
+        Pilar Pedraza is an AMI Montessori Guide (trained by the Montessori Institute of Mexico, A.C.),
+        Forest School Leader, certified family educator in Positive Discipline, Graduate in
+        Early Childhood Education and Social Educator.
+        <br><br>
+Mother of a boy and a girl.
+      </p>
+    </div>
+
+    <div class="equipo-card">
+      <div class="equipo-foto">
+        <img src="../img/equipo/imgeqlucia.png" alt="Lucía">
+      </div>
+      <h3>Lucía</h3>
+      <p class="equipo-rol">Infant Community Guide</p>
+      <p class="equipo-texto">
+        AMI Montessori Guide (trained at IMV - Montessori Institute Valencia). Certified family and early
+        childhood educator in Positive Discipline. Degree in Chemistry from USC (University of Santiago
+        de Compostela).
+      </p>
+    </div>
+
+    <div class="equipo-card">
+      <div class="equipo-foto">
+        <img src="../img/equipo/imgeqdeborah.png" alt="Deborah">
+      </div>
+      <h3>Deborah</h3>
+      <p class="equipo-rol">Infant Community Guide</p>
+      <p class="equipo-texto">
+        University Expert Degree in Montessori Pedagogy and its Application in Early Childhood Education
+        from the Distance University of Madrid (UDIMA). Teacher specializing in Physical Education from the
+        University of Zaragoza. Diploma in Interior Design from the Higher School of Design of
+        Zaragoza (ESDA).<br><br>
+        Mother of a boy and a girl.<br><br>
+        Certified C1 English by Cambridge.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+    <section id="testimonios" class="container testimonios">
+        <div class="text-center">
+            <h2>What our families say</h2>
+            <br><br>
+            <div class="testimonio-card">
+                "Moving our daughter to Aragón Montessori was the best decision. Seeing her come in happy and independent every morning is priceless. The team has exceptional human quality."
+                <span class="testimonio-autor">— Elena R., mother of Lucas (Children's House)</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <div class="contacto-flex">
+            <div class="contacto-info">
+                <h2>Let's talk?</h2>
+                <p>We are in a quiet area of Zaragoza, designed to be a learning refuge.</p>
+                <p><strong>📍 Address:</strong><br>Calle Manuel Alvar Lopez 11<br> Parque de los Cineastas, Zaragoza, Spain</p>
+                <p><strong>📞 Phone:</strong><br>655 195 808</p>
+                <p><strong>✉️ Email:</strong></br>info@aragonmontessori.es </p>
+                <div style="margin-top: 30px; height: 300px; border-radius: 15px; overflow: hidden;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.1911932393245!2d-0.886496601425622!3d41.67871109526667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591361ca56e361%3A0x1d678a15b5c8c13d!2sC.%20de%20Manuel%20Alvar%20L%C3%B3pez%2C%2011%2C%2050018%20Zaragoza!5e0!3m2!1sen!2ses!4v1770637592313!5m2!1sen!2ses"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="contacto-form">
+    <form action="https://formsubmit.co/info@aragonmontessori.es" method="POST">
+
+        <!-- Visible form fields -->
+        <div class="form-group">
+            <label>Parent's name</label>
+            <input type="text" name="nombre" placeholder="E.g. Maria Garcia" required />
+        </div>
+
+        <div class="form-group">
+            <label>Child's age</label>
+            <select name="etapa" required>
+                <option value="" selected disabled>Select a stage</option>
+                <option>Nido (4-18 months)</option>
+                <option>Infant Community (18-36 months)</option>
+                <option>Children's House (3-6 years)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Contact email</label>
+            <input type="email" name="email" placeholder="youremail@example.com" required />
+        </div>
+
+        <div class="form-group">
+            <label>How can we help you?</label>
+            <textarea name="mensaje" rows="4" placeholder="Tell us your questions or request a visit..."></textarea>
+        </div>
+
+        <!-- ====== HIDDEN FIELDS ====== -->
+        <input type="hidden" name="_subject" value="New request · Aragón Montessori">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="gracias.html">
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- Automatic autoresponse -->
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting us. We will respond soon.">
+        <button type="submit" class="btn-submit">Send information request</button>
+        <p class="hint">
+            By submitting this form you accept the
+            <a href="privacidad.html">privacy policy</a>.
+        </p>
+    </form>
+</div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('../components/footer_en.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+    </script>
+    <script src="../carrusel.js"></script>
+</body>
+</html>
